@@ -1,0 +1,69 @@
+<%- include("_header") -%>
+
+<header class="header">
+    <h1 class="logo">
+        <img src="images/icons/Icon metro-weather3.svg" alt="">
+        Weather App
+    </h1>
+    <p class="description">Get the current weather of any city in the world</p>
+</header>
+
+<div class="container">
+    <form action="/" method="post" class="form">
+        <input type="text" id="city-input" name="cityName" placeholder="Enter city name..." required>
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <div class="display-area">
+        <p class="date"></p>
+        <p class="greeting"></p>
+        <hr>
+         <div class="location">
+            <p class="city-name"><%= cityName %><span class="country-code"><%= country %></span></>
+            <p class="temperature"><%= temperature %></>
+        </div>
+        <div class="temperature-details">
+            <div class="min">
+                <small>Min</small>
+                <p>
+                    <%= min %>
+                    <img class="light-icon" src="images/icons/Icon awesome-temperature-low.svg" alt="">
+                </p>
+            </div>
+            <div class="max">
+                <small>Max</small>
+                <p>
+                    <%= max %>
+                    <img class="light-icon" src="images/icons/Icon awesome-temperature-high.svg" alt="">
+                </p>
+            </div>
+            <div class="humidity">
+                <small>Humidity</small>
+                <p>
+                    <%= humidity %>
+                    <img class="light-icon" src="images/icons/Icon weather-humidity.svg" alt="">
+                </p>
+            </div>
+            <div class="pressure">
+                <small>Pressure</small>
+                <p><%= pressure %></p>
+            </div>
+        </div>
+        <div class="wind">
+            <h5>Wind <img class="light-icon" src="images/icons/Icon awesome-wind.svg" alt=""></h5>
+            <div class="speed">
+                <small>Speed</small>
+                <p><%= windSpeed %></p>
+            </div>
+            <div class="degrees">
+                <small>Degrees</small>
+                <p>
+                    <%= windDegrees %>
+                    <img class="dark-icon" src="images/icons/Icon weather-wind-deg.svg" alt="">
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include("_footer") -%>

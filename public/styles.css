@@ -1,0 +1,212 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --veryDarkBlue: #031a29;
+    --darkBlue: #1363DF;
+    --lightBlue: #47B5FF;
+    --extraLightBlue: #DFF6FF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--veryDarkBlue);
+    color: var(--extraLightBlue);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.568);
+    padding: 0.75rem 0;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+}
+
+.date img {
+    width: 1rem;
+    margin-right: 5px;
+}
+
+.greeting {
+    margin:.5rem 0 1.5rem 0;
+}
+
+.form {
+    display: flex;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+input, button {
+    height: 50px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+input {
+    flex: 1;
+    padding-left: 10px;
+    background-color: var(--extraLightBlue);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+button {
+    background-color: var(--darkBlue);
+    color: var(--extraLightBlue);
+    padding: 1rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+label {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-weight: 900;
+    
+}
+
+.display-area {
+    background-color: #031a2993;
+    color: var(--extraLightBlue);
+    padding: 1.25rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+
+    box-shadow: 0 8px 32px 0 rgba(15, 18, 56, 0.37);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.light-icon , .dark-icon{
+    margin-left: 1.25rem;
+}
+
+.temperature, .city-name {
+    font-size:1.5rem;
+}
+
+/* Temperature Details */
+.temperature-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.temperature-details div {
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+small {
+    font-weight: bold;
+}
+
+.temperature-details div p,
+.wind div p {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+.min {
+    background-color: hsla(175, 75%, 55%, 0.507);
+}
+
+.max {
+    background-color: hsla(275, 92%, 31%, 0.507);
+}
+
+.humidity {
+    background-color: hsla(64, 100%, 50%, 0.507);
+}
+
+.pressure {
+    background-color: hsla(323, 90%, 41%, 0.507);
+}
+
+/* Wind */
+.wind {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas: 'title title'
+                         'speed degrees';
+    padding: 0.5rem;
+}
+
+.wind h5 {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.speed {
+    grid-area: speed;
+}
+
+.degrees {
+    grid-area: degrees;
+}
+
+.speed, .degrees {
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: var(--extraLightBlue);
+    color: var(--veryDarkBlue);
+}
+
+/* For Tablet, Laptop, Desktop, and greater screens */
+@media (min-width: 720px) {
+    .container {
+        width: 720px;
+    }
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    padding-top: 1.25rem;
+    background-color: black;
+    color: rgb(211, 211, 211);
+}
+
+.pexels-photo-links {
+    padding-top: 1.25rem;
+}
+
+.attribution {
+    background-color: var(--veryDarkBlue);
+    padding-block: 1.25rem;
+}
+
+.attribution small a {
+    color: gold;
+    padding-inline: 1.25rem;
+}
