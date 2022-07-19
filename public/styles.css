@@ -60,11 +60,12 @@ input, button {
 }
 
 input {
-    flex: 1;
+    /* flex: 1; */
     padding-left: 10px;
     background-color: var(--extraLightBlue);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    width: 70%;
     
 }
 
@@ -75,6 +76,7 @@ button {
     cursor: pointer;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    width: 30%;
 }
 
 label {
