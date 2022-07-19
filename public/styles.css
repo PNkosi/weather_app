@@ -33,6 +33,10 @@ body {
     align-items: center;
 }
 
+.date, .greeting {
+    font-size: 25px;
+}
+
 .date img {
     width: 20px;
     margin-right: 5px;
@@ -44,31 +48,28 @@ body {
 
 .form {
     display: flex;
+    flex-direction: column;
     margin-top: 32px;
     width: 100%;
 }
 
 input, button {
-    height: 50px;
-    font-size: 20px;
+    height: 80px;
+    font-size: 30px;
     border: none;
     outline: none;
 }
 
 input {
-    flex: 1;
     padding-left: 10px;
     background-color: var(--extraLightBlue);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    
 }
 
 button {
     background-color: var(--darkBlue);
     color: var(--extraLightBlue);
     padding: 1rem;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
     cursor: pointer;
 }
 
@@ -91,7 +92,6 @@ label {
     padding: 1.25rem;
     margin-top: 1rem;
     border-radius: 10px;
-
     box-shadow: 0 8px 32px 0 rgba(15, 18, 56, 0.37);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
@@ -121,6 +121,7 @@ label {
 
 small {
     font-weight: bold;
+    font-size: 30px;
 }
 
 .temperature-details div p,
@@ -194,6 +195,7 @@ footer {
     text-align: center;
     width: 100%;
     padding-top: 1.25rem;
+    margin-top: 30px;
     background-color: black;
     color: rgb(211, 211, 211);
 }
