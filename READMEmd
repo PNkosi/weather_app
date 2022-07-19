@@ -17,5 +17,6 @@
 - Simply enter the name of the city you want to check the weather for.
 - Source code available on this [weather app repo](https://github.com/PNkosi/weather_app.git)
 
-- If you want to run it on your machine you'll need a [open weather api key](https://openweathermap.org/) 
+- If you want to run it on your machine you'll need a [open weather api key](https://openweathermap.org/) and set up an environment variable
+
 - After getting that run nmp install
